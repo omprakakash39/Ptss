@@ -1,0 +1,37 @@
+name: PetsPlugin
+version: 1.0.0
+main: com.petsplugin.PetsPlugin
+api-version: 1.21
+author: Sayan
+description: Advanced pet system with 12 pets, 4 rarity tiers, fusion system, and PlaceholderAPI integration
+
+commands:
+  pets:
+    description: Open pets GUI
+    usage: /pets
+    permission: pets.use
+  give:
+    description: Give pet eggs to players
+    usage: /give petegg <rarity> <player>
+    permission: pets.admin
+
+permissions:
+  pets.use:
+    description: Use basic pet system
+    default: true
+  pets.activate:
+    description: Activate pets
+    default: true
+  pets.fusion:
+    description: Use fusion GUI
+    default: true
+  pets.admin:
+    description: Admin access (take items from GUI, give eggs)
+    default: op
+  pets.eggs:
+    description: Egg access
+    default: true
+  pets.placeholderapi:
+    description: PlaceholderAPI integration
+    default: true
+    
