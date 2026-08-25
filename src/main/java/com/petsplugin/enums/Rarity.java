@@ -18,6 +18,7 @@ public enum Rarity {
         this.name = name;
     }
     
-    public String getFormattedName() { 
-        return bold.toString() + color.toString() + name; 
-    }
+    public String getFormattedName() { return bold.toString() + color.toString() + name; }
+    public String getName() { return name; }
+    public ChatColor getColor() { return color; }
+}
